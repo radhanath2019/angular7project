@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -17,4 +17,62 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Bhilwara Infotech</title>
+      
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+      <table width="100%">
+          <tr width="100%">
+              <td width="20%" align="center"><img src="bhil6.png" alt="Bilwara infotech" height="20%" title="Bhilwara Infotech" ></td>
+              <td width="80%"  align="center" colspan="2" style="font-size:40px; font-weight:bold;" height="10%">Bhilwara Infotech Ltd.</td>
+          </tr>
+          <tr align="center" height="10%" style="background-color:red; color:#fff;">
+              <td colspan="3" style="font-size:40px; font-weight:bold;">Welcome to Bhilwara Infotech Ltd.</td>
+          </tr>
+          <tr width="100%" height="70%">
+              <td colspan="3">
+                      
+                             <img class="mySlides" src="bhi1.jpg" style="width:100%" height="180%">
+                             <img class="mySlides" src="bhi2.jpg" style="width:100%" height="180%">
+                             <img class="mySlides" src="bhi3.jpg" style="width:100%" height="160%">
+                             <img class="mySlides" src="bhi4.jpg" style="width:100%" height="130%">
+                           
+                             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                           
+                           
+                             <script>
+                               var myIndex = 0;
+                               carousel();
+                               
+                               function carousel() {
+                                 var i;
+                                 var x = document.getElementsByClassName("mySlides");
+                                 for (i = 0; i < x.length; i++) {
+                                   x[i].style.display = "none";  
+                                 }
+                                 myIndex++;
+                                 if (myIndex > x.length) {myIndex = 1}    
+                                 x[myIndex-1].style.display = "block";  
+                                 setTimeout(carousel, 2000); // Change image every 2 seconds
+                               }
+                               </script>
+             </td>
+          </tr>
+          <tr height="10%">
+              <td width="15%"> Phone : 080 4288 6666</td>
+              <td width="70%"> Location: Fortune Summit Business Park, No. 244, 1st Floor, 6th Sector, HSR Layout,<br> Silk Board Junction, Hosur Main Road, Bengaluru, Karnataka 560068</td>
+              
+              <td width="15%">Fax:+91-120-4277841 </td>
+          </tr>
+      </table>
+ </body>
+ </html>
